@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Manup Template">
+        <meta name="keywords" content="Manup, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HAIIC</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <script>
+            function regblank() {
+                if (document.getElementById('name').value == "" ) {
+                alert('Please fill up the Name');
+                document.getElementById('name').style.borderColor = "red";
+                return false;
+                }
+                else{
+                    document.getElementById('name').style.borderColor = "blue";
+                }
+                if (document.getElementById('mail').value == "" ) {
+                alert('Please fill up the mail');
+                document.getElementById('mail').style.borderColor = "red";
+                return false;
+                }
+                else{
+                    document.getElementById('mail').style.borderColor = "blue";
+                }
+                if (document.getElementById('phone').value == "" ) {
+                alert('Please fill up the phone');
+                document.getElementById('phone').style.borderColor = "red";
+                return false;
+                }
+                else{
+                    document.getElementById('phone').style.borderColor = "blue";
+                }
+                if (document.getElementById('name').value != "" && document.getElementById('mail').value != "" && 
+            document.getElementById('phone').value != "") {
+                window.location.assign('register.html');
+                alert("Registration successfull");
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Contact Form Section Begin -->
+        <section class="contact-from-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>REGISTER NOW!!</h2>
+                            <p>Fill out the form below to recieve a free and confidential intial consultation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="#" class="comment-form contact-form">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <small style="color: red;">*Required</small>
+                                    <input type="text" placeholder="Name" id="name" required>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small style="color: red;">*Required</small>
+                                    <input type="text" placeholder="Email" id="mail" required>
+                                </div>
+                                <div class="col-lg-4">
+                                    <small style="color: red;">*Required</small>
+                                    <input type="text" placeholder="Phone" id="phone" required>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <textarea placeholder="Address"></textarea>
+                                    <button type="button" class="primary-btn" onclick="regblank()">Register</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section End -->
+
+        <!-- Footer Section Begin -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="partner-logo owl-carousel">
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-1.png" alt="">
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-2.png" alt="">
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-3.png" alt="">
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-4.png" alt="">
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-5.png" alt="">
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="pl-table"> -->
+                        <div class="pl-tablecell">
+                            <img src="img/partner-logo/logo-6.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-text">
+                            <div class="ft-logo">
+                                <!-- <a href="#" class="footer-logo"> -->
+                                <img src="BH.jpg" height="80" width="200" alt="">
+                            <!-- </a> -->
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="speaker.html">Speakers</a></li>
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="blog.html">Call for papers</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <div class="copyright-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Us
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                            <div class="ft-social">
+                                <a href="https://www.facebook.com/SMIT.SMU/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/smitmanipal?lang=en"><i class="fa fa-twitter"></i></a>
+                                <!-- <a href="https://twitter.com/smitmanipal?lang=en"><i class="fa fa-linkedin"></i></a> -->
+                                <a href="https://www.instagram.com/official.smit/?hl=en"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@sikkimmanipalinstituteofte8487"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
