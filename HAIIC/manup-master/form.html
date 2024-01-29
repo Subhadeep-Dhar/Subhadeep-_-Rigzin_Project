@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Manup Template">
+    <meta name="keywords" content="Manup, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HAIIC</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script defer src="form.js"></script>
+    <script>
+        function blank() {
+            if (document.getElementById('Paper_ID').value == "") {
+                alert('Please fill up the Paper ID');  
+                document.getElementById('Paper_ID').style.borderColor = "red";            
+                return false;
+            }
+            else{
+                document.getElementById('Paper_ID').style.borderColor = "blue";
+            }
+            if (document.getElementById('Paper_title').value == "") {
+                alert('Please fill up the Paper title');
+                document.getElementById('Paper_title').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('Paper_title').style.borderColor = "blue";
+            }
+             if (document.getElementById('abstract_link').value == "") {
+                alert('Please fill up the abstract link');
+                document.getElementById('abstract_link').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('abstract_link').style.borderColor = "blue";
+            }
+             if (document.getElementById('FAuthor_name').value == "") {
+                alert('Please fill up the First author name');
+                document.getElementById('FAuthor_name').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('FAuthor_name').style.borderColor = "blue";
+            }
+             if (document.getElementById('FAuthor_aff').value == "") {
+                alert('Please fill up the First author afflifiation');
+                document.getElementById('FAuthor_aff').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('FAuthor_aff').style.borderColor = "blue";
+            }
+             if (document.getElementById('FAuthor_mail').value == "" ) {
+                alert('Please fill up the First author mail');
+                document.getElementById('FAuthor_mail').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('FAuthor_mail').style.borderColor = "blue";
+            }
+
+            if (document.getElementById('topics').value == "" ) {
+                alert('Please fill up the topics');
+                document.getElementById('topics').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('topics').style.borderColor = "blue";
+            }
+
+            if (document.getElementById('Author_proof').value == "" ) {
+                alert('Please fill up the Author_proof');
+                document.getElementById('Author_proof').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('Author_proof').style.borderColor = "blue";
+            }
+
+            if (document.getElementById('Author_File').value == "" ) {
+                alert('Please fill up the Author_File');
+                document.getElementById('Author_File').style.borderColor = "red";
+                return false;
+            }
+            else{
+                document.getElementById('Author_File').style.borderColor = "blue";
+            }
+            
+            if (document.getElementById('Paper_ID').value != "" && document.getElementById('Paper_title').value != "" && 
+            document.getElementById('abstract_link').value != "" && document.getElementById('FAuthor_name').value != "" && 
+            document.getElementById('FAuthor_aff').value != "" && document.getElementById('FAuthor_mail').value != "" ) {
+                window.location.assign('thanksub.html');
+                alert("Submission successfull");
+            }
+
+            // function display() {
+            //     if (document.getElementById('chbox') == true) {
+            //         display('display');
+            //     }
+            // }
+        }
+    </script>
+
+    
+</head>
+<section class="contact-from-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Submit your paper</h2>
+                    <p>Fill out the form below to recieve a free and confidential intial consultation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form method ="post" id="cfp" action="/thanksub.html" class="comment-form contact-form" onsubmit="return blank()">
+                    <h5>Paper section :</h5><br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <input type="text" placeholder="Paper ID" name="Paper_ID" id="Paper_ID" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <input type="text" placeholder="Paper title" name="Paper_title" id="Paper_title" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <input type="url" placeholder="abstract link" name="abstract_link" id="abstract_link" required>
+                        </div>
+                        <br>
+                        
+                        <div class="col-lg-4">
+                            <h5>First author section :</h5><br>
+                            <small style="color: red;">*Required</small>
+                            <input type="text" placeholder="Name" name="FAuthor_name" id="FAuthor_name" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <br><br>
+                            <small style="color: red;">*Required</small>
+                            <input type="text" placeholder="Affiliation" name="FAuthor_aff" id="FAuthor_aff" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <br><br>
+                            <small style="color: red;">*Required</small>
+                            <input type="email" placeholder="Email@gmail.com" name="FAuthor_mail" id="FAuthor_mail" required>
+                        </div>
+
+                            <!-- <h5> Are you a Corresponding author?? </h5>
+                            <input type="checkbox" id="chbox" onclick="display()">
+                            <div class="display"> -->
+                            <div class="col-lg-4">
+                                <h5>Corresponding author section :</h5><small style="color: red;">*(Fill up only if you are a Corresponding author!!)</small>
+                                <br>
+                                
+                                <!-- <small style="color: red;">*Required</small> -->
+                                <input type="text" placeholder="Name" name="CorrAuthor_name" id="CorrAuthor_name" required>
+                            </div>
+                            <div class="col-lg-4">
+                                <br><br>
+                                <!-- <small style="color: red;">*Required</small> -->
+                                <input type="text" placeholder="Affiliation" name="CorrAuthor_aff" id="CorrAuthor_aff" required>
+                            </div>
+                            <div class="col-lg-4">
+                                <br><br>
+                                <!-- <small style="color: red;">*Required</small> -->
+                                <input type="email" placeholder="Email@gmail.com" name="CorrAuthor_mail" id="CorrAuthor_mail" required>
+                            </div>
+                        <!-- </div> -->
+                        <div class="col-lg-4">
+                            <h5>Other authors section :</h5><small style="color: red;">*(Fill up the other authors details)</small><br>
+                            
+                            <input type="text" placeholder="Name" name="OtherAuthor_name" id="OtherAuthor_name" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <br><br>
+                            <!-- <small style="color: red;">*Required</small> -->
+                            <input type="text" placeholder="Affiliation" name="OtherAuthor_aff" id="OtherAuthor_aff" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <br><br>
+                            <!-- <small style="color: red;">*Required</small> -->
+                            <input type="email" placeholder="Email@gmail.com" name="OtherAuthor_mail" id="OtherAuthor_mail" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <h5 style="color: rgb(41, 40, 52);">Select track :</h5>
+                            <select name="topics" id="topics">
+                                <option value="none" selected disabled hidden>--Select--</option>
+                                <option value="Social determinants of Health/Health equity">Social determinants of Health/Health equity</option>
+                                <option value="Digital health Technologies">Digital health Technologies</option>
+                                <option value="Drug development"> Drug development</option>
+                                <option value="Aging population and long term care">Aging population and long term care</option>
+                                <option value="Healthcare Management & Technology Adoption">Healthcare Management & Technology Adoption</option>
+                                <option value="E-learning in Healthcare settings">E-learning in Healthcare settings</option>
+                                <option value="Diesease-based or Specific Cleanical issues">Diesease-based or Specific Cleanical issues</option>
+                                <option value="Health Information Safety & Security">Health Information Safety & Security</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <h5 style="color: rgb(41, 40, 52);">Upload your file:</h5>
+                            <input type="file" placeholder="Upload your file" name="Author_File" id="Author_File" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <h5 style="color: rgb(41, 40, 52);">Upload ID proof:</h5>
+                            <input type="file" placeholder="ID proof" name="Author_proof" id="Author_proof" required>
+                        </div>
+                        
+                        <!-- <div class="col-lg-4">
+                            <small style="color: red;">*Required</small>
+                            <h5 style="color: rgb(41, 40, 52);">Upload your photo:</h5>
+                            <select name="" placeholder="Phone" required>
+                        </div> -->
+                        <div class="col-lg-12 text-center">
+                            <textarea placeholder="Tell us something about your project"></textarea>
+                        
+                            <button type="button" class="primary-btn" onclick="return blank()">Submit</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</section><hr>
+<!-- Blog Section End -->
+
+<!-- Footer Section Begin -->
+<section class="contact-section spad">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="section-title">
+                <h2>Location</h2>
+                <p>Get directions to our event center</p>
+            </div>
+            <div class="cs-text">
+                <div class="ct-address">
+                    <span>Address:</span>
+                    <p>Majitar, Rongpo, Sikkim <br />India</p>
+                </div>
+                <ul>
+                    <li>
+                        <span>Phone:</span>
+                        (+91)-9811994561
+                    </li>
+                    <li>
+                        <span>Email:</span>
+                        smit.smu.edu.in@gmail.com
+                    </li>
+                </ul>
+                <div class="ct-links">
+                    <span>Website:</span>
+                    <p><a href="https://smu.edu.in/smit.html/">https://smu.edu.in/smit.html/</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="cs-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.112216772363!2d88.49804761505075!3d27.184209633011445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6a744f1c716eb%3A0xd8c443744048d4d1!2sSikkim%20Manipal%20Institute%20of%20Technology(Sikkim%20Manipal%20University)!5e0!3m2!1sen!2sin!4v1683035266917!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+<div class="container">
+    <div class="partner-logo owl-carousel">
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-1.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-2.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-3.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-4.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-5.png" alt="">
+            </div>
+        </a>
+        <!-- <a href="#" class="pl-table"> -->
+            <div class="pl-tablecell">
+                <img src="img/partner-logo/logo-6.png" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="footer-text">
+                <div class="ft-logo">
+                    <!-- <a href="#" class="footer-logo"> -->
+                    <img src="BH.jpg" height="80" width="200" alt="">
+                <!-- </a> -->
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="speaker.html">Speakers</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="blog.html">Call for papers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="copyright-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Us
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                <div class="ft-social">
+                    <a href="https://www.facebook.com/SMIT.SMU/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/smitmanipal?lang=en"><i class="fa fa-twitter"></i></a>
+                    <!-- <a href="https://twitter.com/smitmanipal?lang=en"><i class="fa fa-linkedin"></i></a> -->
+                    <a href="https://www.instagram.com/official.smit/?hl=en"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sikkimmanipalinstituteofte8487"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
